@@ -24,10 +24,6 @@ const show = (req, res) => {
 }
 
 const create = (req, res, next) => {
-  console.log('This is req', req.body)
-  console.log('This is upload', req.body.upload)
-  console.log('This is Upload', Upload)
-  console.log('This is user id', req.user._id)
   const upload = Object.assign(req.body.upload, {
     _owner: req.user._id
   })

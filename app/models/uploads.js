@@ -12,7 +12,7 @@ const uploadSchema = new mongoose.Schema({
     required: true
   },
   tags: {
-    type: String
+    type: Array
   },
   _owner: {
     type: mongoose.Schema.Types.ObjectId,
