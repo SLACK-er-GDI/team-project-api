@@ -7,7 +7,7 @@ const index = (req, res) => {
   const signature = process.env.FILESTACK_SIGNATURE
   const api = process.env.FILESTACK_API
   res.json({
-    // api,
+    api,
     policy,
     signature
   })
