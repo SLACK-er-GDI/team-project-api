@@ -14,14 +14,29 @@ Curl test scripts can be found in the project scripts folder.
   login and can display, create, edit, and delete contacts.
 
 ## Technologies used.
-- **Styling** - The Boostrap NAV bar and basic styling were used.
-- **HTML** - A table is used to display the list of contacts.
-- **JavaScript** - Events from the table, butons, and the navigation bar drive
-  the application
-- **Handlebars** - The contact table and entry form were done with html in
-  handlebar tamplates.
-- 
-- [ERD for backend DB](https://github.com/SLACK-er-GDI/team-project-api/blob/master/GA-WDI-Project2-ERD.pdf)
+- [Express](http://expressjs.com/en/api.html)
+  The backend DB API was devloped with Express using the GA api template as a starting
+  point.
+- [MongoDB](https://www.mongodb.com/)
+  None relational data store used in conjunction with Express.
+- [ERD for backend DB](https://imgur.com/I5NgK1z)
+
+## API Authentication
+| Verb   | URI Pattern            | Controller#Action |
+|--------|------------------------|-------------------|
+| POST   | `/sign-up`             | `users#signup`    |
+| POST   | `/sign-in`             | `users#signin`    |
+| DELETE | `/sign-out/:id`        | `users#signout`   |
+| PATCH  | `/change-password/:id` | `users#changepw`  |
+
+## API Upload Files
+| Verb   | URI Pattern      | Controller#Action |
+|--------|------------------|-------------------|
+| POST   | `/uploads/`      | `uploads#create`  |
+| GET    | `/upload/`       | `uplaods#index`   |
+| GET    | `/uploads/:id`   | `uploads#show`    |
+| DELETE | `/uploads/:id`   | `uploads#destroy` |
+| PATCH  | `/uploads/:id`   | `uploads#update`  |
 
 ## The Devlopment Story
 [Initial Schedule](https://github.com/ajackson57/aj-networking-contacts-frontend/blob/master/Schedule.pdf)
