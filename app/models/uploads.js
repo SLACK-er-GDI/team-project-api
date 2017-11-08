@@ -17,6 +17,9 @@ const uploadSchema = new mongoose.Schema({
   description: {
     type: String
   },
+  ownerEmail: {
+    type: String
+  },
   _owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
