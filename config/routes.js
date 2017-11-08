@@ -10,6 +10,9 @@ module.exports = require('lib/wiring/routes')
 // standards RESTful routes
 .resources('examples')
 .resources('uploads')
+.resources('files')
+.resources('filestack-policy')
+.resources('filestack', { only: ['get', 'show', 'index'] })
 
 // users of the app have special requirements
 .post('/sign-up', 'users#signup')
