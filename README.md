@@ -38,7 +38,7 @@ Curl test scripts can be found in the project scripts folder.
 | PATCH  | `/uploads/:id`   | `uploads#update`  |
 
 ## The Devlopment Story
-[Initial Schedule](https://github.com/ajackson57/aj-networking-contacts-frontend/blob/master/Schedule.pdf)
+[Initial Schedule](https://github.com/SLACK-er-GDI/team-project-frontend/blob/master/Slackers.pdf)
  - **The Development Process**
  - The development process started with some rough wireframes, some user stories, and a quick planning outline. We divided development into feature groups and created a branch in Git for each group. We pushed and merged to dev often and used pull requests to review work. We worked mostly in pairs and worked on some features individually. We ran into some issues with security with our 3rd party Filestack application.
      -
